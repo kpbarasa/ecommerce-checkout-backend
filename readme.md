@@ -1,29 +1,31 @@
-<h5>Features present in the app :-<h5> 
+<h5>Features present in the app :-<h5>
+
 1. Endpoints authentication
    1. Authenticate user
    2. Authenticate orders
    3. Authenticate Sales trans actions 
 
-1. Get Shopping cart information 
+2. Get Shopping cart information 
    1. shopping cart items
    2. shopping cart Total
 
-2.  Get Coupon information  
+3. Get Coupon information  
 
-3. Sale transaction 
+4. Sale transaction 
    1. paypal Checkout
    2. Mpesa checkout
    3. Stripe checkout 
    4. Save sales
    5. Save sold products
 
-4. Get User information
+5. Get User information
 
-5. Shipping processes
+6. Shipping processes
    1. Create Shiping order after completetion of sale transaction
    2. Get shipping information
 
 <h5>APPP COMPONENETS INDEX:-<h5> 
+
 1. NODE DEPENDENCIES
 
 2. ROUTES/ENDPOINTS 
@@ -66,56 +68,65 @@
 "stripe": "^8.205.0"
 </p>
 
+<h6>
+<h6>
 Git ignore files ===============================================================================
 
 1. node_module
 
 2. .env
 
+<h6>
+
 2. ROUTES/ENDPOINTS ============================================================================
+</h6>
 
-1  /index
+1.  /index
 
-2  /checkout
+2.  /checkout
 
-3  /checkout/success
+3.  /checkout/success
 
-4  /checkout/cancle
+4.  /checkout/cancle
 
-5  /checkout/coupons
+5.  /checkout/coupons
 
-6.1 MPESA
+6. 1.  MPESA
 
-6.1.2  /checkout/mpesa/:id/:shipping
+6. 1. 2.  /checkout/mpesa/:id/:shipping
 
-6.1.3  /checkout/stk_callback
+6. 1. 3.  /checkout/stk_callback
 
 7. Pay Pal
 7.1  /checkout/paypal
 
 8. Stripe
-8.1  /checkout/stripe
-8.2  /checkout/stripe/success
-8.2  /checkout/stripe/cancle
+8. 1.  /checkout/stripe
+8. 2.  /checkout/stripe/success
+8. 2.  /checkout/stripe/cancle
 
 9.  Cart
-9.1  /checkout/cart
-9.2  /checkout/cart/items
-9.3  /checkout/cart/total
+9. 1.  /checkout/cart
+9. 2.  /checkout/cart/items
+9. 3.  /checkout/cart/total
 
 8. Sales & Invoice
-8.1  /checkout/save
-8.2  /checkout/invoice/:id
-8.3  /checkout/sale/report/:id
-8.4  /checkout/sale/product/report/:id
+8. 1.  /checkout/save
+8. 2.  /checkout/invoice/:id
+8. 3.  /checkout/sale/report/:id
+8. 4.  /checkout/sale/product/report/:id
 
-10 Shipping
-10.1 /checkout/shipping
-10.2 /checkout/shipping/area
-10.3 /checkout/shipping/location
-10.4 /checkout/shipping/details
+10. Shipping
+10. 1. /checkout/shipping
+10. 2. /checkout/shipping/area
+10. 3. /checkout/shipping/location
+10. 4. /checkout/shipping/details
+
+
+<h6>
 
 3. CONTROLLERS   ============================================================================
+</h6>
 
 3.1 Shopping cart (cart.js) 
 3.1.2 Store item
@@ -162,9 +173,12 @@ Git ignore files ===============================================================
 3.7 user info (user-info.js)
    User Info
 
-3.1.1 CONTROLLERS PAYMENT ============================================================================
+<h6>
 
-3.1.1 Mpesa (mpesa.js)
+3. 1. CONTROLLERS PAYMENT ============================================================================
+</h6>
+
+3. 1. 1. Mpesa (mpesa.js)
    CheckoutMpesa (LIPA NA MPESA C2B)
          Returns-:
             "MerchantRequestID"
@@ -186,7 +200,7 @@ Git ignore files ===============================================================
                "TransactionDate"
                "ReceiptNumber"
              
-3.1.2 Paypal (paypal.js) "Pay pal client execute request"
+3. 1. 2. Paypal (paypal.js) "Pay pal client execute request"
    checkoutPayPal
       Result-:
          result: {
@@ -198,7 +212,7 @@ Git ignore files ===============================================================
             links
          }
 
-3.1.3 Stripe (stripe.js)
+3. 1. 3. Stripe (stripe.js)
    checkout Stripe
       Result-:
          id
@@ -254,12 +268,18 @@ Git ignore files ===============================================================
          Result-:
          (index view)
 
+<h6>
+
 4. MIDDLEWARE  ============================================================================
+</h6>
 
 1 Mpesa (authentification access token)  (mpesa-access.js)
 2 Order access (authentification)  (order-access.js)
 
+<h6>
+
 5. MODELS  ============================================================================
+</h6>
 
 1 Coupon Model  (coupon.model.js)
 2 Customer Orders  (customer_orders.model.js)
@@ -267,20 +287,29 @@ Git ignore files ===============================================================
 4 Sales model  (sales.model.js)
 5 Shipping model  (shipping.model.js)
 
+<h6>
+
 6. VIEWS  ============================================================================
+</h6>
 
 1 Cancle.ejs
 2 checkout.ejs
 3 Index.ejs
 4 Success.ejs
 
- 7. Public files  ============================================================================
+<h6>
+
+ 7. Public files  ======================================================================
+</h6>
  
   resul.js
   script.js
   main.css
   
+<h6>
+
 8. env  ============================================================================
+</h6>
 
  ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
