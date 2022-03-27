@@ -72,57 +72,55 @@
 <h6>
 Git ignore files ===============================================================================
 
-1. node_module
+1.    node_module
 
-2. .env
+2.    .env
 
 <h6>
 
 2. ROUTES/ENDPOINTS ============================================================================
 </h6>
 
-1.  /index
+2.1   /index
 
-2.  /checkout
+2.2   /checkout
 
-3.  /checkout/success
+2.2.1 /checkout/success
 
-4.  /checkout/cancle
+2.2.3 /checkout/cancle
 
-5.  /checkout/coupons
+2.3   /checkout/coupons
 
-6. 1.  MPESA
+2.4   MPESA
 
-6. 1. 2.  /checkout/mpesa/:id/:shipping
+2.4.1 /checkout/mpesa/:id/:shipping
 
-6. 1. 3.  /checkout/stk_callback
+2.4.2 /checkout/stk_callback
 
-7. Pay Pal
-7.1  /checkout/paypal
+2.5 Pay Pal
+2.3.1 /checkout/paypal
 
-8. Stripe
-8. 1.  /checkout/stripe
-8. 2.  /checkout/stripe/success
-8. 2.  /checkout/stripe/cancle
+2.6 Stripe
+2.6.1 /checkout/stripe
+2.6.2 /checkout/stripe/success
+2.6.2 /checkout/stripe/cancle
 
-9.  Cart
-9. 1.  /checkout/cart
-9. 2.  /checkout/cart/items
-9. 3.  /checkout/cart/total
+2.7  Cart
+2.7.1 /checkout/cart
+2.7.2 /checkout/cart/items
+1.7.3 /checkout/cart/total
 
-8. Sales & Invoice
-8. 1.  /checkout/save
-8. 2.  /checkout/invoice/:id
-8. 3.  /checkout/sale/report/:id
-8. 4.  /checkout/sale/product/report/:id
+2.8  Sales & Invoice
+2.8.1 /checkout/save
+2.8.2 /checkout/invoice/:id
+2.8.3 /checkout/sale/report/:id
+2.8.4 /checkout/sale/product/report/:id
 
-10. Shipping
-10. 1. /checkout/shipping
-10. 2. /checkout/shipping/area
-10. 3. /checkout/shipping/location
-10. 4. /checkout/shipping/details
-
-
+2.9 Shipping
+2.9.1 /checkout/shipping
+2.9.2 /checkout/shipping/area
+2.9.3 /checkout/shipping/location
+2.9.4 /checkout/shipping/details  
 <h6>
 
 3. CONTROLLERS   ============================================================================
