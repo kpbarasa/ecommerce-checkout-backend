@@ -14,9 +14,12 @@
 4. Sale transaction 
    1. paypal Checkout
    2. Mpesa checkout
-   3. Stripe checkout 
-   4. Save sales
-   5. Save sold products
+   3. Mpesa success
+   4. Stripe checkout checkout
+   5. Stripe checkout success
+   6. Save sales
+   7. Save sold products
+   8. Get sales recent sales information
 
 5. Get User information
 
@@ -149,7 +152,6 @@ Git ignore files ===============================================================
 </p>
 
 <h6>
-
 2.9 Shipping
 </h6>
 <p>
@@ -164,9 +166,9 @@ Git ignore files ===============================================================
 
 <h6>
 3. CONTROLLERS   ============================================================================
-</h6>
 
 3.1 Shopping cart (cart.js) 
+</h6>
 <p>
 3.1.2 Store item
 
@@ -180,7 +182,9 @@ Git ignore files ===============================================================
 </p>
 
 
+<h6> 
 3.2 Coupons (coupons.js)
+</h6>
 <p>
 3.2.1 COUPONS ITEM HERE 
 
@@ -190,8 +194,9 @@ Git ignore files ===============================================================
 </p>
 
 
+<h6> 
 3.3 Functions (function.js)
-
+</h6>
 <p>
 3.3.1 Function generate token 
 
@@ -208,15 +213,19 @@ Git ignore files ===============================================================
 3.3.7 Get Full total 
 </p>
 
-   
+ 
+<h6> 
 3.4 Orders (orders.js)
+</h6>  
 <p>
 3.4.1 create order
 </p>
 
 
 
+<h6> 
 3.5 Sales (sales.js) 
+</h6>
 <p>
 3.5.1 save transaction
 
@@ -235,7 +244,9 @@ Git ignore files ===============================================================
 
 
 
+<h6> 
 3.6 Shipping (shipping.js)
+</h6>
 <p>
    Shipping Area
 
@@ -253,7 +264,9 @@ Git ignore files ===============================================================
 </p>
 
 
+<h6> 
 3.7 user info (user-info.js)
+</h6>
 <p>
    User Info
 </p>
@@ -263,7 +276,9 @@ Git ignore files ===============================================================
 3. 1. CONTROLLERS PAYMENT ============================================================================
 </h6>
 
-3. 1. 1. Mpesa (mpesa.js)
+<h6> 
+3.1.1 Mpesa (mpesa.js)
+</h6>
    CheckoutMpesa (LIPA NA MPESA C2B)
          Returns-:
             "MerchantRequestID"
@@ -284,8 +299,10 @@ Git ignore files ===============================================================
                "PhoneNumber"
                "TransactionDate"
                "ReceiptNumber"
-             
-3. 1. 2. Paypal (paypal.js) "Pay pal client execute request"
+          
+<h6> 
+3.1.2 Paypal (paypal.js) "Pay pal client execute request"
+</h6>   
    checkoutPayPal
       Result-:
          result: {
@@ -297,7 +314,9 @@ Git ignore files ===============================================================
             links
          }
 
-3. 1. 3. Stripe (stripe.js)
+<h6> 
+3.1.3 Stripe (stripe.js)
+</h6>
    checkout Stripe
       Result-:
          id
