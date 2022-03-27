@@ -339,7 +339,7 @@ Git ignore files ===============================================================
          success_url
          total_details: { amount_discount, amount_shipping, amount_tax}, 
          
-      checkoutStripe Success  
+   checkoutStripe Success  
          id
          object
          amount_subtotal
