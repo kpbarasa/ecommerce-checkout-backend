@@ -317,7 +317,7 @@ Git ignore files ===============================================================
 <h6> 
 3.1.3 Stripe (stripe.js)
 </h6>
-   checkout Stripe
+      checkout Stripe
          id
          object
          amount_subtotal
@@ -339,7 +339,7 @@ Git ignore files ===============================================================
          success_url
          total_details: { amount_discount, amount_shipping, amount_tax}, 
          
-   checkoutStripe Success  
+      checkoutStripe Success  
          id
          object
          amount_subtotal
