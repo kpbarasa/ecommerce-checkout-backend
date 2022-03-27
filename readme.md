@@ -280,6 +280,7 @@ Git ignore files ===============================================================
 3.1.1 Mpesa (mpesa.js)
 </h6>
       CheckoutMpesa (LIPA NA MPESA C2B)
+
          Returns-:
             "MerchantRequestID"
             "CheckoutRequestID"
@@ -288,6 +289,7 @@ Git ignore files ===============================================================
             "CustomerMessage" 
 
       mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE):
+
          Returns-:
           stkCallback:
             "MerchantRequestID"
@@ -305,7 +307,7 @@ Git ignore files ===============================================================
 </h6>   
       checkoutPayPal
 
-         result: {
+         Result: {
             id
             intent
             status
@@ -319,7 +321,7 @@ Git ignore files ===============================================================
 </h6>
       checkout Stripe
       
-         result:- 
+         Result:- 
          id
          object
          amount_subtotal
@@ -342,6 +344,8 @@ Git ignore files ===============================================================
          total_details: { amount_discount, amount_shipping, amount_tax}, 
          
       checkoutStripe Success
+      
+         result:- 
          id
          object
          amount_subtotal
