@@ -29,23 +29,23 @@
 
 <h5>APPP COMPONENETS INDEX:-<h5> 
 
-1. NODE DEPENDENCIES
+1.NODE DEPENDENCIES
 
-2. ROUTES/ENDPOINTS 
+2.ROUTES/ENDPOINTS 
 
-3. CONTROLLERS
+3.CONTROLLERS
 
   3.1 CONTROLLERS PAYMENT
 
-4. MIDDLEWARE
+4.MIDDLEWARE
 
-5. MODELS
+5.MODELS
 
-6. VIEWS
+6.VIEWS
 
-7. PUBLIC files
+7.PUBLIC files
 
-8. ENV
+8.ENV
  
 <h5>APP COMPONENETS :-<h5>
 <h6>1. NODE DEPENDENCIES =========================================================================<h6>
@@ -273,7 +273,7 @@ Git ignore files ===============================================================
 
 <h6>
 
-3. 1. CONTROLLERS PAYMENT ============================================================================
+3.1 CONTROLLERS PAYMENT ============================================================================
 </h6>
 
 <h6> 
