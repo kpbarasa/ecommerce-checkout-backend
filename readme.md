@@ -169,6 +169,7 @@ Git ignore files ===============================================================
 
 3.1 Shopping cart (cart.js) 
 </h6>
+
 <p>
       3.1.2 Store item
 
@@ -185,6 +186,7 @@ Git ignore files ===============================================================
 <h6> 
 3.2 Coupons (coupons.js)
 </h6>
+
 <p>
       3.2.1 COUPONS ITEM HERE 
 
@@ -197,6 +199,7 @@ Git ignore files ===============================================================
 <h6> 
 3.3 Functions (function.js)
 </h6>
+
 <p>
       3.3.1 Function generate token 
 
@@ -226,6 +229,7 @@ Git ignore files ===============================================================
 <h6> 
 3.5 Sales (sales.js) 
 </h6>
+
 <p>
       3.5.1 save transaction
 
@@ -247,6 +251,7 @@ Git ignore files ===============================================================
 <h6> 
 3.6 Shipping (shipping.js)
 </h6>
+
 <p>
       3.5.1 Shipping Area
 
