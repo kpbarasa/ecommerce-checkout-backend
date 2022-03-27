@@ -170,15 +170,15 @@ Git ignore files ===============================================================
 3.1 Shopping cart (cart.js) 
 </h6>
 <p>
-3.1.2 Store item
+      3.1.2 Store item
 
-3.1.3 cart items  
+      3.1.3 cart items  
 
-3.1.4 Get shoppingcart
+      3.1.4 Get shoppingcart
 
-3.1.5 Get cart items (id & quantity)
+      3.1.5 Get cart items (id & quantity)
 
-3.1.6 Get cart total 
+      3.1.6 Get cart total 
 </p>
 
 
@@ -186,11 +186,11 @@ Git ignore files ===============================================================
 3.2 Coupons (coupons.js)
 </h6>
 <p>
-3.2.1 COUPONS ITEM HERE 
+      3.2.1 COUPONS ITEM HERE 
 
-3.2.2 coupons
+      3.2.2 coupons
 
-3.2.3 Get coupons 
+      3.2.3 Get coupons 
 </p>
 
 
@@ -198,19 +198,19 @@ Git ignore files ===============================================================
 3.3 Functions (function.js)
 </h6>
 <p>
-3.3.1 Function generate token 
+      3.3.1 Function generate token 
 
-3.3.2 Get full date y/m/d  
+      3.3.2 Get full date y/m/d  
 
-3.3.3 Get full date y/m/d/h/m/s
+      3.3.3 Get full date y/m/d/h/m/s
 
-3.3.4 Get Cart total 
+      3.3.4 Get Cart total 
 
-3.3.5 Get coupon total 
+      3.3.5 Get coupon total 
 
-3.3.6 Get Net total 
+      3.3.6 Get Net total 
 
-3.3.7 Get Full total 
+      3.3.7 Get Full total 
 </p>
 
  
@@ -218,7 +218,7 @@ Git ignore files ===============================================================
 3.4 Orders (orders.js)
 </h6>  
 <p>
-3.4.1 create order
+      3.4.1 create order
 </p>
 
 
@@ -227,19 +227,19 @@ Git ignore files ===============================================================
 3.5 Sales (sales.js) 
 </h6>
 <p>
-3.5.1 save transaction
+      3.5.1 save transaction
 
-3.5.2 sale InVoice 
+      3.5.2 sale InVoice 
 
-3.5.3 save Sale 
+      3.5.3 save Sale 
 
-3.5.4 save ProductSales
+      3.5.4 save ProductSales
 
-3.5.5 sales Report 
+      3.5.5 sales Report 
 
-3.5.6 Product SalesReport
+      3.5.6 Product SalesReport
 
-3.5.7 sale Success
+      3.5.7 sale Success
 </p>
 
 
@@ -248,19 +248,19 @@ Git ignore files ===============================================================
 3.6 Shipping (shipping.js)
 </h6>
 <p>
-      Shipping Area
+      3.5.1 Shipping Area
 
-      Shipping Location
+      3.5.2 Shipping Location
 
-      Save Shipping Details
+      3.5.3 Save Shipping Details
 
-      Get Shipping Details
+      3.5.4 Get Shipping Details
 
-      Save Shipping Details
+      3.5.5 Save Shipping Details
 
-      Shipping Area List
+      3.5.6 Shipping Area List
    
-      Shipping LocationList
+      3.5.7 Shipping LocationList
 </p>
 
 
