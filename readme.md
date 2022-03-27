@@ -41,91 +41,108 @@ APPP COMPONENETS :-
 1. NODE DEPENDENCIES =========================================================================
 
 "@paypal/checkout-server-sdk": "^1.0.3",
+
 "axios": "^0.26.1",
+
 "cookie-parser": "^1.4.6",
+
 "cors": "^2.8.5",
+
 "dotenv": "^16.0.0",
+
 "ejs": "^3.1.6",
+
 "express": "^4.17.3",
+
 "mongoose": "^6.2.3",
+
 "request": "^2.88.2",
+
 "stripe": "^8.205.0"
 
-Git ignore files 
-node_module
-.env
+Git ignore files ===============================================================================
+
+1. node_module
+
+2. .env
 
 2. ROUTES/ENDPOINTS ============================================================================
 
 1  /index
+
 2  /checkout
+
 3  /checkout/success
+
 4  /checkout/cancle
+
 5  /checkout/coupons
 
-MPESA
-6  /checkout/mpesa/:id/:shipping
-7  /checkout/stk_callback
+6.1 MPESA
 
-Pay Pal
-8  /checkout/paypal
+6.1.2  /checkout/mpesa/:id/:shipping
 
-Stripe
-9  /checkout/stripe
-10 /checkout/stripe/success
-11 /checkout/stripe/cancle
+6.1.3  /checkout/stk_callback
 
-Cart
-12 /checkout/cart
-13 /checkout/cart/items
-14 /checkout/cart/total
+7. Pay Pal
+7.1  /checkout/paypal
 
-Sales & Invoice
-15 /checkout/save
-16 /checkout/invoice/:id
-17 /checkout/sale/report/:id
-18 /checkout/sale/product/report/:id
+8. Stripe
+8.1  /checkout/stripe
+8.2  /checkout/stripe/success
+8.2  /checkout/stripe/cancle
 
-Shipping
-19 /checkout/shipping
-20 /checkout/shipping/area
-21 /checkout/shipping/location
-22 /checkout/shipping/details
+9.  Cart
+9.1  /checkout/cart
+9.2  /checkout/cart/items
+9.3  /checkout/cart/total
+
+8. Sales & Invoice
+8.1  /checkout/save
+8.2  /checkout/invoice/:id
+8.3  /checkout/sale/report/:id
+8.4  /checkout/sale/product/report/:id
+
+10 Shipping
+10.1 /checkout/shipping
+10.2 /checkout/shipping/area
+10.3 /checkout/shipping/location
+10.4 /checkout/shipping/details
 
 3. CONTROLLERS   ============================================================================
 
 3.1 Shopping cart (cart.js) 
-  Store item
-  cart items  
-  Get shoppingcart
-  Get cart items (id & quantity)
-  Get cart total 
+3.1.2 Store item
+3.1.3 cart items  
+3.1.4 Get shoppingcart
+3.1.5 Get cart items (id & quantity)
+3.1.6 Get cart total 
 
 3.2 Coupons (coupons.js)
-   COUPONS ITEM HERE 
-   coupons
-   Get coupons 
+3.2.1 COUPONS ITEM HERE 
+3.2.2 coupons
+3.2.3 Get coupons 
 
 3.3 Functions (function.js)
-   Function generate token 
-   Get full date y/m/d  
-   Get full date y/m/d/h/m/s
-   Get Cart total 
-   Get coupon total 
-   Get Net total 
-   Get Full total 
+3.3.1 Function generate token 
+3.3.2 Get full date y/m/d  
+3.3.3 Get full date y/m/d/h/m/s
+3.3.4 Get Cart total 
+3.3.5 Get coupon total 
+3.3.6 Get Net total 
+3.3.7 Get Full total 
    
 3.4 Orders (orders.js)
-   create order
+3.4.1 create order
 
 3.5 Sales (sales.js) 
-   save transaction,
-   sale InVoice 
-   save Sale 
-   save ProductSales 
-   sales Report 
-   Product SalesReport
-   sale Success
+3.5.1 save transaction,
+3.5.2 sale InVoice 
+3.5.3 save Sale 
+3.5.4 save ProductSales 
+3.5.5 sales Report 
+3.5.6 Product SalesReport
+3.5.7 sale Success
 
 3.6 Shipping (shipping.js)
    Shipping Area
