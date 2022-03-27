@@ -116,7 +116,9 @@ Git ignore files ===============================================================
 </h6>
 <p>
 2.6.1 /checkout/stripe
+
 2.6.2 /checkout/stripe/success
+
 2.6.2 /checkout/stripe/cancle
 </p>
 
@@ -126,7 +128,9 @@ Git ignore files ===============================================================
 </h6>
 <p>
 2.7.1 /checkout/cart
+
 2.7.2 /checkout/cart/items
+
 1.7.3 /checkout/cart/total
 </p>
 
@@ -137,8 +141,11 @@ Git ignore files ===============================================================
 
 <p>
 2.8.1 /checkout/save
+
 2.8.2 /checkout/invoice/:id
+
 2.8.3 /checkout/sale/report/:id
+
 2.8.4 /checkout/sale/product/report/:id
 </p>
 
@@ -148,8 +155,11 @@ Git ignore files ===============================================================
 </h6>
 <p>
 2.9.1 /checkout/shipping
+
 2.9.2 /checkout/shipping/area
+
 2.9.3 /checkout/shipping/location
+
 2.9.4 /checkout/shipping/details  
 </p>
 <h6>
