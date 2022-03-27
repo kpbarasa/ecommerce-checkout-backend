@@ -24,7 +24,7 @@ Features present in the app :-
    1. Create Shiping order after completetion of sale transaction
    2. Get shipping information
 
-COMPONENETS INDEX:-
+APPP COMPONENETS INDEX:-
 
 1. NODE DEPENDENCIES
 2. ROUTES/ENDPOINTS 
@@ -36,7 +36,10 @@ COMPONENETS INDEX:-
 7. PUBLIC files
 8. ENV
 
-1. NODE DEPENDENCIES ====================
+APPP COMPONENETS :- 
+
+1. NODE DEPENDENCIES =========================================================================
+
 "@paypal/checkout-server-sdk": "^1.0.3",
 "axios": "^0.26.1",
 "cookie-parser": "^1.4.6",
@@ -52,7 +55,8 @@ Git ignore files
 node_module
 .env
 
-2. ROUTES/ENDPOINTS =============================================================================================
+2. ROUTES/ENDPOINTS ============================================================================
+
 1  /index
 2  /checkout
 3  /checkout/success
@@ -88,20 +92,21 @@ Shipping
 21 /checkout/shipping/location
 22 /checkout/shipping/details
 
-3. CONTROLLERS  =============================================================================================
-1 Shopping cart (cart.js) 
+3. CONTROLLERS   ============================================================================
+
+3.1 Shopping cart (cart.js) 
   Store item
   cart items  
   Get shoppingcart
   Get cart items (id & quantity)
   Get cart total 
 
-2 Coupons (coupons.js)
+3.2 Coupons (coupons.js)
    COUPONS ITEM HERE 
    coupons
    Get coupons 
 
-3 Functions (function.js)
+3.3 Functions (function.js)
    Function generate token 
    Get full date y/m/d  
    Get full date y/m/d/h/m/s
@@ -110,10 +115,10 @@ Shipping
    Get Net total 
    Get Full total 
    
-4 Orders (orders.js)
+3.4 Orders (orders.js)
    create order
 
-5 Sales (sales.js) 
+3.5 Sales (sales.js) 
    save transaction,
    sale InVoice 
    save Sale 
@@ -122,7 +127,7 @@ Shipping
    Product SalesReport
    sale Success
 
-6 Shipping (shipping.js)
+3.6 Shipping (shipping.js)
    Shipping Area
    Shipping Location
    Save Shipping Details
@@ -131,11 +136,12 @@ Shipping
    Shipping Area List
    Shipping LocationList
 
-7 user info (user-info.js)
+3.7 user info (user-info.js)
    User Info
 
-3.1 CONTROLLERS PAYMENT=============================================================================================
-1 Mpesa (mpesa.js)
+3.1.1 CONTROLLERS PAYMENT ============================================================================
+
+3.1.1 Mpesa (mpesa.js)
    CheckoutMpesa (LIPA NA MPESA C2B)
          Returns-:
             "MerchantRequestID"
@@ -157,7 +163,7 @@ Shipping
                "TransactionDate"
                "ReceiptNumber"
              
-2 Paypal (paypal.js) "Pay pal client execute request"
+3.1.2 Paypal (paypal.js) "Pay pal client execute request"
    checkoutPayPal
       Result-:
          result: {
@@ -169,7 +175,7 @@ Shipping
             links
          }
 
-3 Stripe (stripe.js)
+3.1.3 Stripe (stripe.js)
    checkout Stripe
       Result-:
          id
@@ -225,29 +231,33 @@ Shipping
          Result-:
          (index view)
 
-MIDDLEWARE =============================================================================================
+4. MIDDLEWARE  ============================================================================
+
 1 Mpesa (authentification access token)  (mpesa-access.js)
 2 Order access (authentification)  (order-access.js)
 
-MODELS =============================================================================================
+5. MODELS  ============================================================================
+
 1 Coupon Model  (coupon.model.js)
 2 Customer Orders  (customer_orders.model.js)
 3 Product Sales   (shipping.model.js)
 4 Sales model  (sales.model.js)
 5 Shipping model  (shipping.model.js)
 
-VIEWS =============================================================================================
+6. VIEWS  ============================================================================
+
 1 Cancle.ejs
 2 checkout.ejs
 3 Index.ejs
 4 Success.ejs
 
- .Public files =============================================================================================
+ 7. Public files  ============================================================================
+ 
   resul.js
   script.js
   main.css
   
-.env =============================================================================================
+8. env  ============================================================================
 
  ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
