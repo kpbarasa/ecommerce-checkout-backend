@@ -23,7 +23,7 @@
    1. Create Shiping order after completetion of sale transaction
    2. Get shipping information
 
-<h3>APPP COMPONENETS INDEX:-<h3> 
+<h5>APPP COMPONENETS INDEX:-<h5> 
 1. NODE DEPENDENCIES
 2. ROUTES/ENDPOINTS 
 3. CONTROLLERS
@@ -57,3 +57,233 @@
 
 "stripe": "^8.205.0"
 </p>
+
+Git ignore files ===============================================================================
+
+1. node_module
+
+2. .env
+
+2. ROUTES/ENDPOINTS ============================================================================
+
+1  /index
+
+2  /checkout
+
+3  /checkout/success
+
+4  /checkout/cancle
+
+5  /checkout/coupons
+
+6.1 MPESA
+
+6.1.2  /checkout/mpesa/:id/:shipping
+
+6.1.3  /checkout/stk_callback
+
+7. Pay Pal
+7.1  /checkout/paypal
+
+8. Stripe
+8.1  /checkout/stripe
+8.2  /checkout/stripe/success
+8.2  /checkout/stripe/cancle
+
+9.  Cart
+9.1  /checkout/cart
+9.2  /checkout/cart/items
+9.3  /checkout/cart/total
+
+8. Sales & Invoice
+8.1  /checkout/save
+8.2  /checkout/invoice/:id
+8.3  /checkout/sale/report/:id
+8.4  /checkout/sale/product/report/:id
+
+10 Shipping
+10.1 /checkout/shipping
+10.2 /checkout/shipping/area
+10.3 /checkout/shipping/location
+10.4 /checkout/shipping/details
+
+3. CONTROLLERS   ============================================================================
+
+3.1 Shopping cart (cart.js) 
+3.1.2 Store item
+3.1.3 cart items  
+3.1.4 Get shoppingcart
+3.1.5 Get cart items (id & quantity)
+3.1.6 Get cart total 
+
+3.2 Coupons (coupons.js)
+3.2.1 COUPONS ITEM HERE 
+3.2.2 coupons
+3.2.3 Get coupons 
+
+3.3 Functions (function.js)
+3.3.1 Function generate token 
+3.3.2 Get full date y/m/d  
+3.3.3 Get full date y/m/d/h/m/s
+3.3.4 Get Cart total 
+3.3.5 Get coupon total 
+3.3.6 Get Net total 
+3.3.7 Get Full total 
+   
+3.4 Orders (orders.js)
+3.4.1 create order
+
+3.5 Sales (sales.js) 
+3.5.1 save transaction,
+3.5.2 sale InVoice 
+3.5.3 save Sale 
+3.5.4 save ProductSales 
+3.5.5 sales Report 
+3.5.6 Product SalesReport
+3.5.7 sale Success
+
+3.6 Shipping (shipping.js)
+   Shipping Area
+   Shipping Location
+   Save Shipping Details
+   Get Shipping Details
+   Save Shipping Details
+   Shipping Area List
+   Shipping LocationList
+
+3.7 user info (user-info.js)
+   User Info
+
+3.1.1 CONTROLLERS PAYMENT ============================================================================
+
+3.1.1 Mpesa (mpesa.js)
+   CheckoutMpesa (LIPA NA MPESA C2B)
+         Returns-:
+            "MerchantRequestID"
+            "CheckoutRequestID"
+            "ResponseCode"
+            "ResponseDescription"
+            "CustomerMessage" 
+
+   mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE):
+         Returns-:
+          stkCallback:
+            "MerchantRequestID"
+            "CheckoutRequestID"
+            "ResultCode"
+            "ResultDesc"
+            CallbackMetadata-:
+               "Amount"
+               "PhoneNumber"
+               "TransactionDate"
+               "ReceiptNumber"
+             
+3.1.2 Paypal (paypal.js) "Pay pal client execute request"
+   checkoutPayPal
+      Result-:
+         result: {
+            id
+            intent
+            status
+            purchase_units
+            create_time
+            links
+         }
+
+3.1.3 Stripe (stripe.js)
+   checkout Stripe
+      Result-:
+         id
+         object
+         amount_subtotal
+         amount_total
+         cancel_url 
+         currency
+         expires_at
+         metadata
+         mode
+         payment_method_types
+         payment_status
+         shipping
+         shipping_options: [
+               {
+                  shipping_amount.
+                  shipping_rate
+               }
+            ], 
+         success_url
+         total_details: { amount_discount, amount_shipping, amount_tax}, 
+         
+      checkoutStripe Success  
+         id
+         object
+         amount_subtotal
+         amount_total
+         cancel_url 
+         currency
+         customer_details: {
+            email
+            phone
+            tax_exempt
+            tax_ids
+         },
+         expires_at
+         metadata
+         mode
+         payment_method_types
+         payment_status
+         shipping
+         shipping_options: [
+               {
+                  shipping_amount.
+                  shipping_rate
+               }
+            ], 
+         success_url
+         total_details: { amount_discount, amount_shipping, amount_tax}, 
+      
+      checkoutStripe Cancle  
+         Result-:
+         (index view)
+
+4. MIDDLEWARE  ============================================================================
+
+1 Mpesa (authentification access token)  (mpesa-access.js)
+2 Order access (authentification)  (order-access.js)
+
+5. MODELS  ============================================================================
+
+1 Coupon Model  (coupon.model.js)
+2 Customer Orders  (customer_orders.model.js)
+3 Product Sales   (shipping.model.js)
+4 Sales model  (sales.model.js)
+5 Shipping model  (shipping.model.js)
+
+6. VIEWS  ============================================================================
+
+1 Cancle.ejs
+2 checkout.ejs
+3 Index.ejs
+4 Success.ejs
+
+ 7. Public files  ============================================================================
+ 
+  resul.js
+  script.js
+  main.css
+  
+8. env  ============================================================================
+
+ ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+ PAYPAL_CLIENT_ID=<Client id here>
+ PAYPAL_CLIENT_SECRET=<Secrete here>
+
+ STRIPE_PRIVATE_KEY=<Key here>
+ CLIENT_URL=http:// 
+
+ SAFARICOM_AUTH_TOKEN=<token here>
+ SAFARICOM_CLIENT_URL=https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
+
+
+ COOKIE_SECRETE=<secrete here>
