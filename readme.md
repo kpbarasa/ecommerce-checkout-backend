@@ -340,7 +340,7 @@ Git ignore files ===============================================================
          total_details: { amount_discount, amount_shipping, amount_tax}, 
          
    checkoutStripe Success  
-      results:-
+       results-:
          id
          object
          amount_subtotal
