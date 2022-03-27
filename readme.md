@@ -248,19 +248,19 @@ Git ignore files ===============================================================
 3.6 Shipping (shipping.js)
 </h6>
 <p>
-   Shipping Area
+      Shipping Area
 
-   Shipping Location
+      Shipping Location
 
-   Save Shipping Details
+      Save Shipping Details
 
-   Get Shipping Details
+      Get Shipping Details
 
-   Save Shipping Details
+      Save Shipping Details
 
-   Shipping Area List
+      Shipping Area List
    
-   Shipping LocationList
+      Shipping LocationList
 </p>
 
 
@@ -268,7 +268,7 @@ Git ignore files ===============================================================
 3.7 user info (user-info.js)
 </h6>
 <p>
-   User Info
+      User Info
 </p>
 
 <h6>
@@ -372,8 +372,7 @@ Git ignore files ===============================================================
             ], 
          success_url
          total_details: { amount_discount, amount_shipping, amount_tax}, 
-   <>   <>  
-      
+<br>    
       checkoutStripe Cancle  
          Result-:
          (index view)
