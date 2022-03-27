@@ -395,54 +395,68 @@ Git ignore files ===============================================================
 4. MIDDLEWARE  ============================================================================
 </h6>
 
-1 Mpesa (authentification access token)  (mpesa-access.js)
-2 Order access (authentification)  (order-access.js)
+      1 Mpesa (authentification access token)  (mpesa-access.js)
+<br>  
+      2 Order access (authentification)  (order-access.js)
 
 <h6>
 
 5. MODELS  ============================================================================
 </h6>
 
-1 Coupon Model  (coupon.model.js)
-2 Customer Orders  (customer_orders.model.js)
-3 Product Sales   (shipping.model.js)
-4 Sales model  (sales.model.js)
-5 Shipping model  (shipping.model.js)
+      1 Coupon Model  (coupon.model.js)
+<br>  
+
+      2 Customer Orders  (customer_orders.model.js)
+<br>  
+
+      3 Product Sales   (shipping.model.js)
+<br>  
+
+      4 Sales model  (sales.model.js)
+<br>  
+
+      5 Shipping model  (shipping.model.js)
 
 <h6>
 
 6. VIEWS  ============================================================================
 </h6>
 
-1 Cancle.ejs
-2 checkout.ejs
-3 Index.ejs
-4 Success.ejs
+      1 Cancle.ejs
+
+      2 checkout.ejs
+
+      3 Index.ejs
+
+      4 Success.ejs
 
 <h6>
 
  7. Public files  ======================================================================
 </h6>
  
-  resul.js
-  script.js
-  main.css
+      resul.js
+        
+      script.js
+
+      main.css
   
 <h6>
 
 8. env  ============================================================================
 </h6>
 
- ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+      ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
- PAYPAL_CLIENT_ID=<Client id here>
- PAYPAL_CLIENT_SECRET=<Secrete here>
+      PAYPAL_CLIENT_ID=<Client id here>
+      PAYPAL_CLIENT_SECRET=<Secrete here>
 
- STRIPE_PRIVATE_KEY=<Key here>
- CLIENT_URL=http:// 
+      STRIPE_PRIVATE_KEY=<Key here>
+      CLIENT_URL=http:// 
 
- SAFARICOM_AUTH_TOKEN=<token here>
- SAFARICOM_CLIENT_URL=https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
+      SAFARICOM_AUTH_TOKEN=<token here>
+      SAFARICOM_CLIENT_URL=https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
 
 
- COOKIE_SECRETE=<secrete here>
+      COOKIE_SECRETE=<secrete here>
