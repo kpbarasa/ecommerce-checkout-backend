@@ -304,7 +304,7 @@ Git ignore files ===============================================================
 3.1.2 Paypal (paypal.js) "Pay pal client execute request"
 </h6>   
       checkoutPayPal
-      Result-:
+      
          result: {
             id
             intent
