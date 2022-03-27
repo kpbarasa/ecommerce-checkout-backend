@@ -279,7 +279,7 @@ Git ignore files ===============================================================
 <h6> 
 3.1.1 Mpesa (mpesa.js)
 </h6>
-   CheckoutMpesa (LIPA NA MPESA C2B)
+      CheckoutMpesa (LIPA NA MPESA C2B)
          Returns-:
             "MerchantRequestID"
             "CheckoutRequestID"
@@ -287,7 +287,7 @@ Git ignore files ===============================================================
             "ResponseDescription"
             "CustomerMessage" 
 
-   mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE):
+      mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE):
          Returns-:
           stkCallback:
             "MerchantRequestID"
@@ -303,7 +303,7 @@ Git ignore files ===============================================================
 <h6> 
 3.1.2 Paypal (paypal.js) "Pay pal client execute request"
 </h6>   
-   checkoutPayPal
+      checkoutPayPal
       Result-:
          result: {
             id
