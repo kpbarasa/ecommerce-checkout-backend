@@ -1,4 +1,42 @@
-NODE DEPENDENCIES ==============================================================================================================
+Features present in the app :-
+
+1. Endpoints authentication
+   1. Authenticate user
+   2. Authenticate orders
+   3. Authenticate Sales trans actions 
+
+1. Get Shopping cart information 
+   1. shopping cart items
+   2. shopping cart Total
+
+2  Get Coupon information  
+
+3. Sale transaction 
+   1. paypal Checkout
+   2. Mpesa checkout
+   3. Stripe checkout 
+   4. Save sales
+   5. Save sold products
+
+4. Get User information
+
+5. Shipping processes
+   1. Create Shiping order after completetion of sale transaction
+   2. Get shipping information
+
+COMPONENETS INDEX:-
+
+1. NODE DEPENDENCIES
+2. ROUTES/ENDPOINTS 
+3. CONTROLLERS
+  3.1 CONTROLLERS PAYMENT
+4. MIDDLEWARE
+5. MODELS
+6. VIEWS
+7. PUBLIC files
+8. ENV
+
+1. NODE DEPENDENCIES ==============================================================================================================
  ===============================================================================================================================
 "@paypal/checkout-server-sdk": "^1.0.3",
 "axios": "^0.26.1",
@@ -15,7 +53,7 @@ Git ignore files
 node_module
 .env
 
-ROUTES/ENDPOINTS ===============================================================================================================
+2. ROUTES/ENDPOINTS ===============================================================================================================
  ===============================================================================================================================
 1  /index
 2  /checkout
@@ -52,10 +90,10 @@ Shipping
 21 /checkout/shipping/location
 22 /checkout/shipping/details
 
-CONTROLLERS  ===================================================================================================================
+3. CONTROLLERS  ===================================================================================================================
  ===============================================================================================================================
 1 Shopping cart (cart.js) 
-  Sore item
+  Store item
   cart items  
   Get shoppingcart
   Get cart items (id & quantity)
@@ -99,7 +137,7 @@ CONTROLLERS  ===================================================================
 7 user info (user-info.js)
    User Info
 
-CONTROLLERS PAYMENT ============================================================================================================
+3.1 CONTROLLERS PAYMENT ============================================================================================================
  ===============================================================================================================================
 1 Mpesa (mpesa.js)
    CheckoutMpesa (LIPA NA MPESA C2B)
