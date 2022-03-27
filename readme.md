@@ -34,8 +34,8 @@
 7. PUBLIC files
 8. ENV
  
-<h3>APPP COMPONENETS :-<h3>
-<h4>1. NODE DEPENDENCIES =========================================================================<h4>
+<h5>APP COMPONENETS :-<h5>
+<h6>1. NODE DEPENDENCIES =========================================================================<h6>
 <p>
 "@paypal/checkout-server-sdk": "^1.0.3",
 
