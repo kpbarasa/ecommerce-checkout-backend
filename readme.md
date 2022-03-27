@@ -234,6 +234,7 @@ Git ignore files ===============================================================
 </h6>
 
 <p>
+
       3.5.1 save transaction
 
       3.5.2 sale InVoice 
@@ -256,6 +257,7 @@ Git ignore files ===============================================================
 </h6>
 
 <p>
+
       3.5.1 Shipping Area
 
       3.5.2 Shipping Location
@@ -276,7 +278,8 @@ Git ignore files ===============================================================
 3.7 user info (user-info.js)
 </h6>
 <p>
-      User Info
+
+      3.7.1 User Info
 </p>
 
 <h6>
