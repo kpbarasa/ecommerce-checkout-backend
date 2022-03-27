@@ -36,7 +36,7 @@ COMPONENETS INDEX:-
 7. PUBLIC files
 8. ENV
 
-1. NODE DEPENDENCIES =============================================================================================
+1. NODE DEPENDENCIES ====================
 "@paypal/checkout-server-sdk": "^1.0.3",
 "axios": "^0.26.1",
 "cookie-parser": "^1.4.6",
