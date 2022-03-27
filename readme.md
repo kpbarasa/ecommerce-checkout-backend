@@ -1,4 +1,4 @@
-Features present in the app :-
+<h3>Features present in the app :-<h3> 
 1. Endpoints authentication
    1. Authenticate user
    2. Authenticate orders
@@ -8,7 +8,7 @@ Features present in the app :-
    1. shopping cart items
    2. shopping cart Total
 
-2  Get Coupon information  
+2.  Get Coupon information  
 
 3. Sale transaction 
    1. paypal Checkout
@@ -23,8 +23,7 @@ Features present in the app :-
    1. Create Shiping order after completetion of sale transaction
    2. Get shipping information
 
-APPP COMPONENETS INDEX:-
-
+<h3>APPP COMPONENETS INDEX:-<h3> 
 1. NODE DEPENDENCIES
 2. ROUTES/ENDPOINTS 
 3. CONTROLLERS
