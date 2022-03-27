@@ -304,7 +304,7 @@ Git ignore files ===============================================================
 3.1.2 Paypal (paypal.js) "Pay pal client execute request"
 </h6>   
       checkoutPayPal
-      
+
          result: {
             id
             intent
@@ -318,6 +318,8 @@ Git ignore files ===============================================================
 3.1.3 Stripe (stripe.js)
 </h6>
       checkout Stripe
+      
+         result:- 
          id
          object
          amount_subtotal
