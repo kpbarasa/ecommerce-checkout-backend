@@ -1,4 +1,4 @@
-<h3>Features present in the app :-<h3> 
+<h5>Features present in the app :-<h5> 
 1. Endpoints authentication
    1. Authenticate user
    2. Authenticate orders
