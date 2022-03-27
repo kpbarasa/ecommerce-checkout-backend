@@ -2,7 +2,7 @@
 <h1>Features present in the app :-</h1>
 <h3>APPP COMPONENETS :-<h3>
 <h4>1. NODE DEPENDENCIES =========================================================================<h4>
-<>
+-:
 "@paypal/checkout-server-sdk": "^1.0.3",
 
 "axios": "^0.26.1",
@@ -21,5 +21,4 @@
 
 "request": "^2.88.2",
 
-"stripe": "^8.205.0"
-</>
+"stripe": "^8.205.0" 
