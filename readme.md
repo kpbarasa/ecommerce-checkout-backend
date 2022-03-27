@@ -80,7 +80,7 @@ Git ignore files ===============================================================
 
 2. ROUTES/ENDPOINTS ============================================================================
 </h6>
-
+<p>
 2.1   /index
 
 2.2   /checkout
@@ -90,44 +90,75 @@ Git ignore files ===============================================================
 2.2.3 /checkout/cancle
 
 2.3   /checkout/coupons
+</p>
+
+<h6>
 
 2.4   MPESA
-
+</h6>
+<p>
 2.4.1 /checkout/mpesa/:id/:shipping
 
 2.4.2 /checkout/stk_callback
+</p>
+
+<h6>
 
 2.5 Pay Pal
+</h6>
+<p>
 2.3.1 /checkout/paypal
+</p>
+
+<h6>
 
 2.6 Stripe
+</h6>
+<p>
 2.6.1 /checkout/stripe
 2.6.2 /checkout/stripe/success
 2.6.2 /checkout/stripe/cancle
+</p>
+
+<h6>
 
 2.7  Cart
+</h6>
+<p>
 2.7.1 /checkout/cart
 2.7.2 /checkout/cart/items
 1.7.3 /checkout/cart/total
+</p>
+
+<h6>
 
 2.8  Sales & Invoice
+</h6>
+
+<p>
 2.8.1 /checkout/save
 2.8.2 /checkout/invoice/:id
 2.8.3 /checkout/sale/report/:id
 2.8.4 /checkout/sale/product/report/:id
+</p>
+
+<h6>
 
 2.9 Shipping
+</h6>
+<p>
 2.9.1 /checkout/shipping
 2.9.2 /checkout/shipping/area
 2.9.3 /checkout/shipping/location
 2.9.4 /checkout/shipping/details  
+</p>
 <h6>
 
 3. CONTROLLERS   ============================================================================
 </h6>
 
 3.1 Shopping cart (cart.js) 
-
+<p>
 3.1.2 Store item
 
 3.1.3 cart items  
@@ -137,19 +168,22 @@ Git ignore files ===============================================================
 3.1.5 Get cart items (id & quantity)
 
 3.1.6 Get cart total 
+</p>
 
 
 3.2 Coupons (coupons.js)
-
+<p>
 3.2.1 COUPONS ITEM HERE 
 
 3.2.2 coupons
 
 3.2.3 Get coupons 
+</p>
 
 
 3.3 Functions (function.js)
 
+<p>
 3.3.1 Function generate token 
 
 3.3.2 Get full date y/m/d  
@@ -163,15 +197,18 @@ Git ignore files ===============================================================
 3.3.6 Get Net total 
 
 3.3.7 Get Full total 
+</p>
 
    
 3.4 Orders (orders.js)
-
+<p>
 3.4.1 create order
+</p>
+
 
 
 3.5 Sales (sales.js) 
-
+<p>
 3.5.1 save transaction
 
 3.5.2 sale InVoice 
@@ -185,10 +222,12 @@ Git ignore files ===============================================================
 3.5.6 Product SalesReport
 
 3.5.7 sale Success
+</p>
+
 
 
 3.6 Shipping (shipping.js)
-
+<p>
    Shipping Area
 
    Shipping Location
@@ -202,11 +241,13 @@ Git ignore files ===============================================================
    Shipping Area List
    
    Shipping LocationList
+</p>
 
 
 3.7 user info (user-info.js)
-
+<p>
    User Info
+</p>
 
 <h6>
 
