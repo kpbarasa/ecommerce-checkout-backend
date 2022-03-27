@@ -318,7 +318,6 @@ Git ignore files ===============================================================
 3.1.3 Stripe (stripe.js)
 </h6>
    checkout Stripe
-      Result-:
          id
          object
          amount_subtotal
