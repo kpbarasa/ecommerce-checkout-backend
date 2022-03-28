@@ -1,5 +1,9 @@
 <h5>Features present in the app :-<h5>
 
+<p>
+Simple eccommerce checkout back-end appllication with: Authentication, Shopping Cart processing, Sale transaction processing(PayPal, Stripe & M-Pesa API), Couppon discount options and Shipping processing.
+</p>
+
 1. Endpoints authentication
    1. Authenticate user
    2. Authenticate orders
