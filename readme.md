@@ -144,7 +144,7 @@ Git ignore files ===============================================================
       controller: checkoutStripe Cancle
 </p>
 
-<h5  name="head1234">
+<h5  id="head1234">
 
 2.7  Cart
 </h5>
