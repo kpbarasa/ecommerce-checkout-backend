@@ -209,6 +209,93 @@ Git ignore files ===============================================================
 <h5>
 3. CONTROLLERS   ============================================================================
 
+
+<h5> 
+3.3 Functions (function.js)
+</h5>
+
+<p>
+
+   3.3.1 Function generate token 
+            
+            Function:-
+            
+                  generate token :  generate_id(length)
+            
+            
+            Result:-
+
+                  <token>
+
+<br>
+   3.3.2 Get  date 
+            
+            Function:-
+            
+                  Get date:  GetFullDate(date)
+            
+            
+            Result:-
+
+                  <date: y/m/d >
+
+<br>
+   3.3.3 Get full date 
+            
+            Function:-
+            
+                  Get full date:  GetFullDate(date)
+            
+            Result:-
+
+                  <date: y/m/d/h/m/s >
+
+<br>
+   3.3.4 Get Cart total   
+            
+            Function:-
+            
+                  Get Cart Total:  cartTotal(3.1.3 cart items, 3.1.2 Store item )
+            
+            Result:-
+
+               <Cart Tota> 
+
+<br>
+   3.3.5 Get coupon total   
+            
+            Function:-
+            
+                  Get Coupon Total: 3.2.2 coupons ++
+            
+            Result:-
+
+               <Coupon Tota>
+
+<br>
+   3.3.6 Get Net total   
+            
+            Function:-
+            
+                  Get Net Total: tax + total
+            
+            Result:-
+
+               <Net Tota>
+
+<br>
+   3.3.7 Get Full total 
+            
+            Function:-
+            
+                  Get Full Total: (Total- Discount(Coupons)) + Tax + shippingCost
+            
+            Result:-
+
+               <Total cost>
+</p>
+
+
 3.1 Shopping cart (cart.js) 
 </h5>
 
@@ -279,75 +366,6 @@ Git ignore files ===============================================================
 </p>
 
 
-<h5> 
-3.3 Functions (function.js)
-</h5>
-
-<p>
-
-   3.3.1 Function generate token 
-            
-            Result:-
-
-                  <token>
-
-<br>
-   3.3.2 Get full date 
-            
-            Result:-
-
-                  <date: y/m/d >
-
-<br>
-   3.3.3 Get full date 
-            
-            Result:-
-
-                  <date: y/m/d/h/m/s >
-
-<br>
-   3.3.4 Get Cart total  
-            
-            Function:-
-
-                  const getTotal = items.reduce((sum, item) => {
-                        return sum + storeItems.get(item.id).price * item.quantity
-                  }, 0)
-
-<br>
-   3.3.5 Get coupon total 
-            
-            Function:-
-
-                  const couponTotal = (getcouponId) => getcouponId.reduce((sum, coupon) => {
-                        return sum + couponMap.get(Number(coupon)).price
-                  }, 0)  
-
-<br>
-   3.3.6 Get Net total  
-            
-            Function:-
-
-                  function getNetTotal(total, couponTotal, shippingCost){   
-                        const tax_rate = 0.14
-                        const tax = total * tax_rate 
-                        const netTotal = Number(tax + total) 
-                        return netTotal
-                  }
-
-<br>
-   3.3.7 Get Full total 
-            
-            Function:-
-
-                  function getFullTotal(total, couponTotal, shippingCost){   
-                        const tax_rate = 0.14
-                        const tax = total * tax_rate  
-                        const fullTotal = (Number(total) - couponTotal) +tax + Number(shippingCost) 
-                        return fullTotal
-                  }
-</p>
-
  
 <h5> 
 3.4 Orders (orders.js)
@@ -358,23 +376,13 @@ Git ignore files ===============================================================
       3.4.1 create order
             
             Function:-
+
+               save order
             
-                const customerOrder = new customerOrders({
+            Result:-
 
-                  order_id,
-                  customer_id,
-                  product_id,
-                  total_cost,
-                  qty,
-                  shipping_type,
-                  shipping_status,
-                  order_status
-
-               })
+               console.log("order created")
   
-               customerOrder.save()
-               .then(console.log("order created"))
-               .catch(err => res.status(400).json('Error: unable to create order' + err))
 </p>
 
 
