@@ -1079,130 +1079,19 @@ Git ignore files ===============================================================
 <p>
 
       3.7.1 User Info
-</p>
+            
+            Result:- 
+          {
 
-<h5>
+            id:"#8278462389", 
+            fname:"user name", 
+            mname:"user name", 
+            lname:"user name", 
+            location:"cbd", 
+            town:"Nairobi", 
+            country:"Kenya"
 
-2. ROUTES/ENDPOINTS ============================================================================
-</h5>
-<p>
-2.1   /index
-
-2.2   /checkout
-
-2.2.1 /checkout/success
-
-2.2.3 /checkout/cancle
-
-2.3   /checkout/coupons 
-
-      controller: Get coupons 
-</p>
-
-<h5>
-
-2.4   MPESA
-</h5>
-<p>
-2.4.1 /checkout/mpesa/:id/:shipping
-
-      controller: CheckoutMpesa (LIPA NA MPESA C2B)
-
-2.4.2 /checkout/stk_callback
-
-      controller: mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE)
-</p>
-
-<h5>
-
-2.5 Pay Pal
-</h5>
-<p>
-2.3.1 /checkout/paypal
-
-   <h6 dir="head1234">controller</h6> 
-
-      checkoutPayPal
-</p>
-
-<h5>
-
-2.6 Stripe
-</h5>
-<p>
-2.6.1 /checkout/stripe
-
-      controller: checkout Stripe
-
-2.6.2 /checkout/stripe/success
-
-      controller: checkoutStripe Success
-
-2.6.2 /checkout/stripe/cancle
-
-      controller: checkoutStripe Cancle
-</p>
-
-<h5>
-
-2.7  Cart
-</h5>
-<p>
-2.7.1 /checkout/cart 
-
-      controller: cart items   
-
-2.7.2 /checkout/cart/items
-
-      controller: Get cart items (id & quantity)
-
-1.7.3 /checkout/cart/total
-
-      controller: Get cart total 
-</p>
-
-<h5>
-
-2.8  Sales & Invoice
-</h5>
-
-<p>
-2.8.1 /checkout/save
-
-      controller: save transaction  
-
-2.8.2 /checkout/invoice/:id
-
-      controller: sale InVoice 
-
-2.8.3 /checkout/sale/report/:id
-
-      controller: sales Report 
-
-2.8.4 /checkout/sale/product/report/:id
-
-      controller: Product SalesReport
-</p>
-
-<h5>
-2.9 Shipping
-</h5>
-<p>
-2.9.1 /checkout/shipping
-
-      controller: Save Shipping Details
-
-2.9.2 /checkout/shipping/area 
-
-      controller: Shipping Area 
-
-2.9.3 /checkout/shipping/location
-
-      controller: Shipping Location
-
-2.9.4 /checkout/shipping/details  
-
-      controller: Get Shipping Details 
+         } 
 </p>
 
 
@@ -1310,5 +1199,131 @@ Git ignore files ===============================================================
          Result-:
          (index view)
 
+</h5>
+
 <h5>
+
+2. ROUTES/ENDPOINTS ============================================================================
+</h5>
+<p>
+2.1   /index
+
+2.2   /checkout
+
+2.2.1 /checkout/success
+
+2.2.3 /checkout/cancle
+
+2.3   /checkout/coupons 
+
+      controller: Get coupons 
+</p>
+
+<h5>
+
+2.4   MPESA
+</h5>
+<p>
+2.4.1 /checkout/mpesa/:id/:shipping
+
+      controller: CheckoutMpesa (LIPA NA MPESA C2B)
+
+2.4.2 /checkout/stk_callback
+
+      controller: mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE)
+</p>
+
+<h5>
+
+2.5 Pay Pal
+</h5>
+<p>
+2.3.1 /checkout/paypal
+
+   <h6>controller</h6> 
+
+      checkoutPayPal
+</p>
+
+<h5>
+
+2.6 Stripe
+</h5>
+<p>
+2.6.1 /checkout/stripe
+
+      controller: checkout Stripe
+
+2.6.2 /checkout/stripe/success
+
+      controller: checkoutStripe Success
+
+2.6.2 /checkout/stripe/cancle
+
+      controller: checkoutStripe Cancle
+</p>
+
+<h5>
+
+2.7  Cart
+</h5>
+<p>
+2.7.1 /checkout/cart 
+
+      controller: cart items   
+
+2.7.2 /checkout/cart/items
+
+      controller: Get cart items (id & quantity)
+
+1.7.3 /checkout/cart/total
+
+      controller: Get cart total 
+</p>
+
+<h5>
+
+2.8  Sales & Invoice
+</h5>
+
+<p>
+2.8.1 /checkout/save
+
+      controller: save transaction  
+
+2.8.2 /checkout/invoice/:id
+
+      controller: sale InVoice 
+
+2.8.3 /checkout/sale/report/:id
+
+      controller: sales Report 
+
+2.8.4 /checkout/sale/product/report/:id
+
+      controller: Product SalesReport
+</p>
+
+<h5>
+2.9 Shipping
+</h5>
+<p>
+2.9.1 /checkout/shipping
+
+      controller: Save Shipping Details
+
+2.9.2 /checkout/shipping/area 
+
+      controller: Shipping Area 
+
+2.9.3 /checkout/shipping/location
+
+      controller: Shipping Location
+
+2.9.4 /checkout/shipping/details  
+
+      controller: Get Shipping Details 
+</p>
+
+
 
