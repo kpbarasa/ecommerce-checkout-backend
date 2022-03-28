@@ -121,12 +121,12 @@ Git ignore files ===============================================================
 <p>
 2.3.1 /checkout/paypal
 
-      <h6>controller</h6>   
+   <h6>controller</h6> [link](#head1234)  
 
       checkoutPayPal
 </p>
 
-<h5>
+<h5 name="head1234">
 
 2.6 Stripe
 </h5>
