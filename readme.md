@@ -144,7 +144,7 @@ Git ignore files ===============================================================
       controller: checkoutStripe Cancle
 </p>
 
-<h5  name="head1234">
+<h5>
 
 2.7  Cart
 </h5>
@@ -214,15 +214,15 @@ Git ignore files ===============================================================
 
 <p>
 
-      3.1.2 Store item
+   3.1.2 Store item
             
             Result:-
 
                   Map([
                         ["Product id", { price: "000", name: "product title", sku: "#0000000", cat: "Cat Id"}],
                   ])
-
-      3.1.3 cart items  
+<br>
+   3.1.3 cart items  
             
             Result:-
             
@@ -230,23 +230,26 @@ Git ignore files ===============================================================
                         { id: "Product id", quantity: "0" },
                   ]
 
-      3.1.4 Get shoppingcart
+<br>
+   3.1.4 Get shoppingcart
             
             Result:-
             
                   {"Product id", price: "000", name: "product title", sku: "#0000000", cat: "Cat Id"}
 
-      3.1.5 Get cart items (id & quantity)
+<br>
+   3.1.5 Get cart items (id & quantity)
             
             Result:-
             
                   { id: "Product id", quantity: "0" },
 
-      3.1.6 Get cart total 
+<br>
+   3.1.6 Get cart total 
             
             Result:-
             
-                  { total: 00 },
+                  getTotal(),
 
 </p>
 
@@ -257,15 +260,21 @@ Git ignore files ===============================================================
 
 <p> 
 
-      3.2.2 coupons
-
-      3.2.3 Get coupons 
+<br>
+   3.2.2 coupons
             
             Result:-
 
                   Map([
                         ["cupon id", { price: "000", startDate: "", endDate: "", type: "", desc: ""}],
                   ])
+
+<br>
+   3.2.3 Get coupons 
+            
+            Result:-
+
+                  <coupons>
 
 </p>
 
@@ -276,25 +285,28 @@ Git ignore files ===============================================================
 
 <p>
 
-      3.3.1 Function generate token 
+   3.3.1 Function generate token 
             
             Result:-
 
                   <token>
 
-      3.3.2 Get full date 
+<br>
+   3.3.2 Get full date 
             
             Result:-
 
                   <date: y/m/d >
 
-      3.3.3 Get full date 
+<br>
+   3.3.3 Get full date 
             
             Result:-
 
                   <date: y/m/d/h/m/s >
 
-      3.3.4 Get Cart total  
+<br>
+   3.3.4 Get Cart total  
             
             Function:-
 
@@ -302,7 +314,8 @@ Git ignore files ===============================================================
                         return sum + storeItems.get(item.id).price * item.quantity
                   }, 0)
 
-      3.3.5 Get coupon total 
+<br>
+   3.3.5 Get coupon total 
             
             Function:-
 
@@ -310,7 +323,8 @@ Git ignore files ===============================================================
                         return sum + couponMap.get(Number(coupon)).price
                   }, 0)  
 
-      3.3.6 Get Net total  
+<br>
+   3.3.6 Get Net total  
             
             Function:-
 
@@ -321,7 +335,8 @@ Git ignore files ===============================================================
                         return netTotal
                   }
 
-      3.3.7 Get Full total 
+<br>
+   3.3.7 Get Full total 
             
             Function:-
 
