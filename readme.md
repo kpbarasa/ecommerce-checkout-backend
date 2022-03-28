@@ -121,7 +121,7 @@ Git ignore files ===============================================================
 <p>
 2.3.1 /checkout/paypal
 
-<h6>controller</h6>   
+      <h6>controller</h6>   
 
       checkoutPayPal
 </p>
