@@ -1015,18 +1015,61 @@ Git ignore files ===============================================================
 <p>
 
       3.6.1 Shipping Area
+            
+            Function:-
+
+               shippingAreaList.find()
+            
+            Result:-
+
+               return {shippingAreaList}
 
       3.6.2 Shipping Location
+            
+            Function:-
+
+               shippingLocationList.find(shippingAreaList.id)
+            
+            Result:-
+
+               return {shippingLocationList}
+
 
       3.6.3 Save Shipping Details
+            
+            Function:-
+
+               shipping.model.save()
+            
+            Result:-
+
+               return Shipping Details: {
+
+                  order_id,
+                  area,
+                  location,
+                  cost,
+                  shipping_status
+
+               }
 
       3.6.4 Get Shipping Details
+            
+            Function:-
 
-      3.6.5 Save Shipping Details
+               shipping.model.find(order_id)
+            
+            Result:-
 
-      3.6.6 Shipping Area List
-   
-      3.6.7 Shipping LocationList
+               return Shipping Details: {
+
+                  order_id,
+                  area,
+                  location,
+                  cost,
+                  shipping_status
+
+               }  
 </p>
 
 
