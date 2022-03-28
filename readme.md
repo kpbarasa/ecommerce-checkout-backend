@@ -91,13 +91,9 @@ Git ignore files ===============================================================
 
 2.2.3 /checkout/cancle
 
-2.3   /checkout/coupons
+2.3   /checkout/coupons 
 
-      COUPONS ITEM HERE 
-
-      coupons
-
-      Get coupons 
+      controller: Get coupons 
 </p>
 
 <h6>
@@ -107,7 +103,11 @@ Git ignore files ===============================================================
 <p>
 2.4.1 /checkout/mpesa/:id/:shipping
 
+      controller: CheckoutMpesa (LIPA NA MPESA C2B)
+
 2.4.2 /checkout/stk_callback
+
+      controller: mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE)
 </p>
 
 <h6>
@@ -116,6 +116,8 @@ Git ignore files ===============================================================
 </h6>
 <p>
 2.3.1 /checkout/paypal
+
+      controller: checkoutPayPal
 </p>
 
 <h6>
@@ -125,9 +127,15 @@ Git ignore files ===============================================================
 <p>
 2.6.1 /checkout/stripe
 
+      controller: checkout Stripe
+
 2.6.2 /checkout/stripe/success
 
+      controller: checkoutStripe Success
+
 2.6.2 /checkout/stripe/cancle
+
+      controller: checkoutStripe Cancle
 </p>
 
 <h6>
@@ -135,13 +143,9 @@ Git ignore files ===============================================================
 2.7  Cart
 </h6>
 <p>
-2.7.1 /checkout/cart
+2.7.1 /checkout/cart 
 
-      Store item
-
-      cart items  
-
-      Get shoppingcart
+      cart items   
 
 2.7.2 /checkout/cart/items
 
@@ -160,13 +164,7 @@ Git ignore files ===============================================================
 <p>
 2.8.1 /checkout/save
 
-      save transaction 
-
-      save Sale 
-
-      save ProductSales
-
-      sale Success
+      save transaction  
 
 2.8.2 /checkout/invoice/:id
 
@@ -195,11 +193,11 @@ Git ignore files ===============================================================
 
 2.9.3 /checkout/shipping/location
 
-      Shipping Location
+      3.5.2 Shipping Location
 
 2.9.4 /checkout/shipping/details  
 
-      Get Shipping Details 
+      3.5.4 Get Shipping Details 
 </p>
 
 <h6>
@@ -337,7 +335,7 @@ Git ignore files ===============================================================
             "ResponseDescription"
             "CustomerMessage" 
 
-      mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE):
+      mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE)
 
          Returns-:
           stkCallback:
