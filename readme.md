@@ -121,7 +121,7 @@ Git ignore files ===============================================================
 <p>
 2.3.1 /checkout/paypal
 
-   <h6>controller</h6> 
+   <h6 dir="head1234">controller</h6> 
 
       checkoutPayPal
 </p>
@@ -144,22 +144,22 @@ Git ignore files ===============================================================
       controller: checkoutStripe Cancle
 </p>
 
-<h5>
+<h5  name="head1234">
 
 2.7  Cart
 </h5>
 <p>
 2.7.1 /checkout/cart 
 
-      cart items   
+      controller: cart items   
 
 2.7.2 /checkout/cart/items
 
-      Get cart items (id & quantity)
+      controller: Get cart items (id & quantity)
 
 1.7.3 /checkout/cart/total
 
-      Get cart total 
+      controller: Get cart total 
 </p>
 
 <h5>
@@ -170,19 +170,19 @@ Git ignore files ===============================================================
 <p>
 2.8.1 /checkout/save
 
-      save transaction  
+      controller: save transaction  
 
 2.8.2 /checkout/invoice/:id
 
-      sale InVoice 
+      controller: sale InVoice 
 
 2.8.3 /checkout/sale/report/:id
 
-      sales Report 
+      controller: sales Report 
 
 2.8.4 /checkout/sale/product/report/:id
 
-      Product SalesReport
+      controller: Product SalesReport
 </p>
 
 <h5>
@@ -191,19 +191,19 @@ Git ignore files ===============================================================
 <p>
 2.9.1 /checkout/shipping
 
-      Save Shipping Details
+      controller: Save Shipping Details
 
 2.9.2 /checkout/shipping/area 
 
-      Shipping Area 
+      controller: Shipping Area 
 
 2.9.3 /checkout/shipping/location
 
-      3.5.2 Shipping Location
+      controller: Shipping Location
 
 2.9.4 /checkout/shipping/details  
 
-      3.5.4 Get Shipping Details 
+      controller: Get Shipping Details 
 </p>
 
 <h5>
@@ -215,14 +215,39 @@ Git ignore files ===============================================================
 <p>
 
       3.1.2 Store item
+            
+            Result:-
+
+                  Map([
+                        ["Product id", { price: "000", name: "product title", sku: "#0000000", cat: "Cat Id"}],
+                  ])
 
       3.1.3 cart items  
+            
+            Result:-
+            
+                  [
+                        { id: "Product id", quantity: "0" },
+                  ]
 
       3.1.4 Get shoppingcart
+            
+            Result:-
+            
+                  {"Product id", price: "000", name: "product title", sku: "#0000000", cat: "Cat Id"}
 
       3.1.5 Get cart items (id & quantity)
+            
+            Result:-
+            
+                  { id: "Product id", quantity: "0" },
 
       3.1.6 Get cart total 
+            
+            Result:-
+            
+                  { total: 00 },
+
 </p>
 
 
