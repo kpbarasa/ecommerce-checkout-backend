@@ -260,6 +260,13 @@ Git ignore files ===============================================================
       3.2.2 coupons
 
       3.2.3 Get coupons 
+            
+            Result:-
+
+                  Map([
+                        ["cupon id", { price: "000", startDate: "", endDate: "", type: "", desc: ""}],
+                  ])
+
 </p>
 
 
@@ -270,18 +277,60 @@ Git ignore files ===============================================================
 <p>
 
       3.3.1 Function generate token 
+            
+            Result:-
 
-      3.3.2 Get full date y/m/d  
+                  <token>
 
-      3.3.3 Get full date y/m/d/h/m/s
+      3.3.2 Get full date 
+            
+            Result:-
 
-      3.3.4 Get Cart total 
+                  <date: y/m/d >
+
+      3.3.3 Get full date 
+            
+            Result:-
+
+                  <date: y/m/d/h/m/s >
+
+      3.3.4 Get Cart total  
+            
+            Function:-
+
+                  const getTotal = items.reduce((sum, item) => {
+                        return sum + storeItems.get(item.id).price * item.quantity
+                  }, 0)
 
       3.3.5 Get coupon total 
+            
+            Function:-
 
-      3.3.6 Get Net total 
+                  const couponTotal = (getcouponId) => getcouponId.reduce((sum, coupon) => {
+                        return sum + couponMap.get(Number(coupon)).price
+                  }, 0)  
+
+      3.3.6 Get Net total  
+            
+            Function:-
+
+                  function getNetTotal(total, couponTotal, shippingCost){   
+                        const tax_rate = 0.14
+                        const tax = total * tax_rate 
+                        const netTotal = Number(tax + total) 
+                        return netTotal
+                  }
 
       3.3.7 Get Full total 
+            
+            Function:-
+
+                  function getFullTotal(total, couponTotal, shippingCost){   
+                        const tax_rate = 0.14
+                        const tax = total * tax_rate  
+                        const fullTotal = (Number(total) - couponTotal) +tax + Number(shippingCost) 
+                        return fullTotal
+                  }
 </p>
 
  
