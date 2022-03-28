@@ -52,7 +52,7 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 8.ENV
  
 <h5>APP COMPONENETS :-<h5>
-<h6>1. NODE DEPENDENCIES =========================================================================<h6>
+<h5>1. NODE DEPENDENCIES =========================================================================<h5>
 <p>
 "@paypal/checkout-server-sdk": "^1.0.3",
 
@@ -75,17 +75,17 @@ Simple eccommerce checkout back-end appllication with: Authentication, Shopping 
 "stripe": "^8.205.0"
 </p>
 
-<h6>
-<h6>
+<h5>
+<h5>
 Git ignore files ===============================================================================
 
 1.    node_module
 
 2.    .env
 
-<h6>
+<h5>
 2. ROUTES/ENDPOINTS ============================================================================
-</h6>
+</h5>
 <p>
 2.1   /index
 
@@ -100,10 +100,10 @@ Git ignore files ===============================================================
       controller: Get coupons 
 </p>
 
-<h6>
+<h5>
 
 2.4   MPESA
-</h6>
+</h5>
 <p>
 2.4.1 /checkout/mpesa/:id/:shipping
 
@@ -114,22 +114,22 @@ Git ignore files ===============================================================
       controller: mpesaCallBackUrl (LIPA NA MPESA C2B  SUCCESS RESPONSE)
 </p>
 
-<h6>
+<h5>
 
 2.5 Pay Pal
-</h6>
+</h5>
 <p>
 2.3.1 /checkout/paypal
 
-<h>controller</h>   
+<h6>controller</h6>   
 
       checkoutPayPal
 </p>
 
-<h6>
+<h5>
 
 2.6 Stripe
-</h6>
+</h5>
 <p>
 2.6.1 /checkout/stripe
 
@@ -144,10 +144,10 @@ Git ignore files ===============================================================
       controller: checkoutStripe Cancle
 </p>
 
-<h6>
+<h5>
 
 2.7  Cart
-</h6>
+</h5>
 <p>
 2.7.1 /checkout/cart 
 
@@ -162,10 +162,10 @@ Git ignore files ===============================================================
       Get cart total 
 </p>
 
-<h6>
+<h5>
 
 2.8  Sales & Invoice
-</h6>
+</h5>
 
 <p>
 2.8.1 /checkout/save
@@ -185,9 +185,9 @@ Git ignore files ===============================================================
       Product SalesReport
 </p>
 
-<h6>
+<h5>
 2.9 Shipping
-</h6>
+</h5>
 <p>
 2.9.1 /checkout/shipping
 
@@ -206,11 +206,11 @@ Git ignore files ===============================================================
       3.5.4 Get Shipping Details 
 </p>
 
-<h6>
+<h5>
 3. CONTROLLERS   ============================================================================
 
 3.1 Shopping cart (cart.js) 
-</h6>
+</h5>
 
 <p>
 
@@ -226,9 +226,9 @@ Git ignore files ===============================================================
 </p>
 
 
-<h6> 
+<h5> 
 3.2 Coupons (coupons.js)
-</h6>
+</h5>
 
 <p> 
 
@@ -238,9 +238,9 @@ Git ignore files ===============================================================
 </p>
 
 
-<h6> 
+<h5> 
 3.3 Functions (function.js)
-</h6>
+</h5>
 
 <p>
 
@@ -260,9 +260,9 @@ Git ignore files ===============================================================
 </p>
 
  
-<h6> 
+<h5> 
 3.4 Orders (orders.js)
-</h6> 
+</h5> 
 
 <p>
 
@@ -271,9 +271,9 @@ Git ignore files ===============================================================
 
 
 
-<h6> 
+<h5> 
 3.5 Sales (sales.js) 
-</h6>
+</h5>
 
 <p>
 
@@ -294,9 +294,9 @@ Git ignore files ===============================================================
 
 
 
-<h6> 
+<h5> 
 3.6 Shipping (shipping.js)
-</h6>
+</h5>
 
 <p>
 
@@ -316,22 +316,22 @@ Git ignore files ===============================================================
 </p>
 
 
-<h6> 
+<h5> 
 3.7 user info (user-info.js)
-</h6>
+</h5>
 <p>
 
       3.7.1 User Info
 </p>
 
-<h6>
+<h5>
 
 3.1 CONTROLLERS PAYMENT ============================================================================
-</h6>
+</h5>
 
-<h6> 
+<h5> 
 3.1.1 Mpesa (mpesa.js)
-</h6>
+</h5>
       CheckoutMpesa (LIPA NA MPESA C2B)
 
          Returns-:
@@ -355,9 +355,9 @@ Git ignore files ===============================================================
                "TransactionDate"
                "ReceiptNumber"
           
-<h6> 
+<h5> 
 3.1.2 Paypal (paypal.js) "Pay pal client execute request"
-</h6>   
+</h5>   
       checkoutPayPal
 
          Result: {
@@ -369,9 +369,9 @@ Git ignore files ===============================================================
             links
          }
 
-<h6> 
+<h5> 
 3.1.3 Stripe (stripe.js)
-</h6>
+</h5>
       checkout Stripe
       
          Result:- 
@@ -430,20 +430,20 @@ Git ignore files ===============================================================
          Result-:
          (index view)
 
-<h6>
+<h5>
 
 4. MIDDLEWARE  ============================================================================
-</h6>
+</h5>
 
       1 Mpesa (authentification access token)  (mpesa-access.js)
 <br>  
 
       2 Order access (authentification)  (order-access.js)
 
-<h6>
+<h5>
 
 5. MODELS  ============================================================================
-</h6>
+</h5>
 
       1 Coupon Model  (coupon.model.js)
 <br>  
@@ -459,10 +459,10 @@ Git ignore files ===============================================================
 
       5 Shipping model  (shipping.model.js)
 
-<h6>
+<h5>
 
 6. VIEWS  ============================================================================
-</h6>
+</h5>
 
       1 Cancle.ejs
 
@@ -472,10 +472,10 @@ Git ignore files ===============================================================
 
       4 Success.ejs
 
-<h6>
+<h5>
 
  7. Public files  ======================================================================
-</h6>
+</h5>
  
       resul.js
         
@@ -483,10 +483,10 @@ Git ignore files ===============================================================
 
       main.css
   
-<h6>
+<h5>
 
 8. env  ============================================================================
-</h6>
+</h5>
 
       ATLAS_URI=mongodb+srv://<UserName>:<password>.4p1ws.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
