@@ -92,6 +92,12 @@ Git ignore files ===============================================================
 2.2.3 /checkout/cancle
 
 2.3   /checkout/coupons
+
+      COUPONS ITEM HERE 
+
+      coupons
+
+      Get coupons 
 </p>
 
 <h6>
@@ -131,9 +137,19 @@ Git ignore files ===============================================================
 <p>
 2.7.1 /checkout/cart
 
+      Store item
+
+      cart items  
+
+      Get shoppingcart
+
 2.7.2 /checkout/cart/items
 
+      Get cart items (id & quantity)
+
 1.7.3 /checkout/cart/total
+
+      Get cart total 
 </p>
 
 <h6>
@@ -144,11 +160,25 @@ Git ignore files ===============================================================
 <p>
 2.8.1 /checkout/save
 
+      save transaction 
+
+      save Sale 
+
+      save ProductSales
+
+      sale Success
+
 2.8.2 /checkout/invoice/:id
+
+      sale InVoice 
 
 2.8.3 /checkout/sale/report/:id
 
+      sales Report 
+
 2.8.4 /checkout/sale/product/report/:id
+
+      Product SalesReport
 </p>
 
 <h6>
@@ -157,11 +187,19 @@ Git ignore files ===============================================================
 <p>
 2.9.1 /checkout/shipping
 
-2.9.2 /checkout/shipping/area
+      Save Shipping Details
+
+2.9.2 /checkout/shipping/area 
+
+      Shipping Area 
 
 2.9.3 /checkout/shipping/location
 
+      Shipping Location
+
 2.9.4 /checkout/shipping/details  
+
+      Get Shipping Details 
 </p>
 
 <h6>
@@ -188,9 +226,7 @@ Git ignore files ===============================================================
 3.2 Coupons (coupons.js)
 </h6>
 
-<p>
-
-      3.2.1 COUPONS ITEM HERE 
+<p> 
 
       3.2.2 coupons
 
