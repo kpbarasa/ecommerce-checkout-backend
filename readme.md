@@ -356,6 +356,25 @@ Git ignore files ===============================================================
 <p>
 
       3.4.1 create order
+            
+            Function:-
+            
+                const customerOrder = new customerOrders({
+
+                  order_id,
+                  customer_id,
+                  product_id,
+                  total_cost,
+                  qty,
+                  shipping_type,
+                  shipping_status,
+                  order_status
+
+               })
+  
+               customerOrder.save()
+               .then(console.log("order created"))
+               .catch(err => res.status(400).json('Error: unable to create order' + err))
 </p>
 
 
