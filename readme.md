@@ -121,7 +121,7 @@ Git ignore files ===============================================================
 <p>
 2.3.1 /checkout/paypal
 
-   <h6 dir="head1234">controller</h6> 
+   <h6>controller</h6> 
 
       checkoutPayPal
 </p>
@@ -144,7 +144,7 @@ Git ignore files ===============================================================
       controller: checkoutStripe Cancle
 </p>
 
-<h5  id="head1234">
+<h5>
 
 2.7  Cart
 </h5>
