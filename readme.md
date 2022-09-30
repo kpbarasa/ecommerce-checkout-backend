@@ -1,3 +1,5 @@
+# Ecoomerce check out (stripe, M_PESA)
+live: https://e-commerce-check-out.herokuapp.com/checkout
 <h5>Features present in the app :-<h5>
 
 <p>
